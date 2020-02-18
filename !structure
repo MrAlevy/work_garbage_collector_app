@@ -1,0 +1,150 @@
+GLOBAL STORE:
+
+[
+  journal: Object {
+    "isFilled": true,
+    "journal": Object {},
+    "journalError": "",
+    "journalIsLoading": false,
+  }
+
+  dicts: Object {
+    "contType": Object {},
+    "garbageGen": Object {},
+    "newGarbageGen": Object {},
+    "poi": Object {}
+    "newPoi": Object {}
+
+    "contTypeValues": Object {},        // my !
+    "createdGarbageGen": Object {},     // my !
+    "createdPoi": Object {},            // my !
+  }
+
+  settings: Object {
+    "msisdn": "",
+    "vehicleNumber": "",
+    "api": ""
+  }
+
+    app: {
+    placeScreen: {
+      suggestions: {
+        isVisible: false,
+        chosenId: '',
+        data: [],       // id of POI
+        takeFrom: ''    // poiDict, newPoiDict, createdPoiDict
+      },
+      createdPoi: {
+        type: '',
+        number: '',
+        address: '',
+        coordinates: '',
+      }
+    }
+  }
+]
+
+_____________________________________________________
+
+dicts: Object {
+
+  "contType": Object {
+    "items": Object {
+      "d290f1ee-6c54-3b01-90e6-d701748f0841": Object {
+        "captureType": "Вильчатый",
+        "fullname": "Контейнер К-150",
+        "id": "d290f1ee-6c54-3b01-90e6-d701748f0841",
+        "material": "Сталь",
+        "shortname": " К-150",
+        "value": 1.5,
+      },
+    },
+    "updateDate": "2020-01-20T09:00:00.003Z",
+  },
+
+  "contTypeValues": Object {
+    "1.2": Array [
+      "d290f1ee-6c54-3b01-90e6-d701748f0843",
+    ],
+  },
+
+  "garbageGen": Object {
+    "items": Object {
+      "d290f1ee-6d54-5b01-90e6-d708749484831": Object {
+        "id": "d290f1ee-6d54-5b01-90e6-d708749484831",
+        "name": "ООО Рога и Копыта",
+      },
+    },
+    "updateDate": "2020-01-20T09:00:00.003Z",
+  },
+
+  "newGarbageGen": Object {},
+
+  "wayPoints": Object {
+    "items": Object {
+      "d290f1ee-7c54-4b01-10e6-d701748f0852": Object {
+        "address": "СНТ Росток",
+        "borderShape": "",
+        "bulkyWaste": Array [],
+        "containers": Array [
+          Object {
+            "containerTypeId": "d290f1ee-6c54-3b01-90e6-d701748f0841",
+            "containersCount": 4,
+            "garbageGeneratorId": "d290f1ee-6d54-5b01-90e6-d708749484835",
+            "loadedContainersCount": "",
+            "status": "origin",
+          },
+        ],
+        "coordinates": "60.238040, 29.900088",
+        "entryGlonasDate": "",
+        "entryUserDate": "",
+        "exitGlonassDate": "",
+        "exitUserDate": "",
+        "id": "d290f1ee-7c54-4b01-10e6-d701748f0852",
+        "number": "814363409173",
+        "photos": Array [],
+        "type": "container_place",
+      },
+    },
+    "updateDate": "2020-01-20T09:00:00.003Z",
+  },
+}
+_____________________________________________________
+
+journal: Object {
+  "actualizationDate": "2020-01-31T07:45:49.953Z",
+  "closed": 0,
+  "updateDate": "2020-01-31T07:45:49.953Z",
+  "waypoints": Array [
+    Object {
+      "IdPOI": "473843934845",
+      "bulkyWaste": Array [
+        Object {
+          "garbageGeneratorId": "d290f1ee-6d54-5b01-90e6-d708749484834",
+          "value": 2,
+        },
+      ],
+      "containerWaste": Array [
+        Object {
+          "containerTypeId": "d290f1ee-6c54-3b01-90e6-d701748f0841",
+          "containersCount": 5,
+          "garbageGeneratorId": "d290f1ee-6d54-5b01-90e6-d708749484836",
+          "loadedContainersCount": "5",
+        },
+        Object {
+          "containerTypeId": "d290f1ee-6c54-3b01-90e6-d701748f0842",
+          "containersCount": 3,
+          "garbageGeneratorId": "d290f1ee-6d54-5b01-90e6-d708749484836",
+          "loadedContainersCount": "3",
+        },
+      ],
+      "entryGlonasDate": "",
+      "entryUserDate": "2020-01-31T09:14:45.953Z",
+      "exitGlonassDate": "",
+      "exitUserDate": "",
+      "id": "f387e137-2904-4ae9-b741-7a612eece3d9",
+      "isAddedByUser": "1",
+      "photos": Array [],
+    },
+  ],
+}
